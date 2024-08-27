@@ -1,0 +1,72 @@
+header {
+
+    @apply px-4 flex items-center justify-between gap-5 fixed top-0 left-0 w-full z-10 bg-yt-black;
+
+    .left,
+    .middle,
+    .right {
+
+        @apply flex items-center;
+
+    }
+
+    .left {
+        
+        .menu-icon {
+
+            @apply p-2;
+
+        }
+
+        .logo {
+
+            @apply text-yt-white p-4;
+
+            img {
+
+                @apply w-[90px];
+
+            }
+
+        }
+
+    }
+
+    input {
+
+        @apply w-[536px] rounded-l-full bg-transparent border border-yt-light-black px-4 py-2 text-yt-white placeholder:text-yt-light-white placeholder:font-medium outline-none;
+
+    }
+
+    .search-icon {
+
+        @apply px-5 py-2 rounded-r-full bg-yt-light-black border border-yt-light-black;
+
+    }
+
+    .mic-icon {
+        
+        @apply p-2 rounded-full bg-yt-light-black ml-4;
+
+    }
+
+    .right {
+
+        @apply gap-7;
+
+        .user-login {
+
+            @apply rounded-md px-3 py-1.5 bg-red-600 text-yt-white font-medium text-sm;
+
+        }
+
+        .user-profile {
+
+            @apply rounded-full h-8 w-8;
+
+        }
+
+    }
+
+
+}

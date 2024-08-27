@@ -1,0 +1,11 @@
+.home {
+
+    @apply w-[calc(100vw-240px)] h-[calc(100vh-52.1px)] ml-60 mt-[52.1px] px-6;
+
+    .video-container {
+
+        @apply overflow-y-auto scrollbar-hide flex flex-wrap h-full gap-y-5 pt-4 pb-16;
+
+    }
+
+}

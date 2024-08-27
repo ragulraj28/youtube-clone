@@ -1,0 +1,17 @@
+.category-nav {
+
+    @apply w-full flex items-center gap-3 overflow-x-scroll scrollbar-hide relative;
+
+    .category {
+
+        @apply rounded-lg bg-yt-light-black px-3 py-1.5 my-3 text-sm font-medium cursor-pointer break-keep whitespace-nowrap;
+
+        &.active {
+
+            @apply bg-white text-yt-black;
+
+        }
+
+    }
+
+}

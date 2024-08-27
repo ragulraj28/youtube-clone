@@ -1,0 +1,35 @@
+.sidebar {
+
+    @apply w-60 h-[calc(100vh-52.1px)] p-3 overflow-y-auto scrollbar-hide fixed left-0 top-[52.1px];
+
+    h3 {
+
+        @apply text-base font-medium mb-1 px-3;
+
+    }
+
+    .menu-item {
+
+        @apply flex items-center gap-5 px-3 py-2.5 cursor-pointer hover:bg-yt-light-black rounded-lg;
+
+        &.active {
+
+            @apply bg-yt-light-black font-medium;
+            
+        }
+        
+        p {
+
+            @apply text-sm leading-none truncate;
+
+        }
+
+    }
+
+    hr {
+
+        @apply my-3 border-yt-light-black;
+
+    }
+
+}

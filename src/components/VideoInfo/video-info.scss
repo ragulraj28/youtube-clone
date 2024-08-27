@@ -1,0 +1,104 @@
+.video-page {
+
+    @apply pt-20 pb-24 h-screen flex gap-10 xl:px-24 mx-auto container overflow-y-auto scrollbar-hide;
+
+    .left {
+
+        @apply w-3/4;
+
+        .iframe-container {
+
+            @apply w-full;
+            position: relative;
+            height: 0;
+            padding-top: 56%; /* Aspect ratio for height */
+
+            iframe {
+
+                @apply absolute inset-0 w-full h-full border-none rounded-xl;
+    
+            }
+
+        }
+
+        .video-title {
+
+            @apply text-xl font-bold mt-4 mb-3;
+
+        }
+
+        .video-details {
+
+            @apply flex justify-between items-center gap-5;
+
+        }
+
+        .channel-info {
+
+            @apply flex items-center gap-3;
+
+            .logo {
+
+                @apply rounded-full h-10 w-10 cursor-pointer;
+
+            }
+
+            .channel-name {
+
+                @apply font-medium cursor-pointer;
+
+            }
+
+            p {
+
+                @apply text-yt-light-white text-xs;
+
+            }
+
+            .subscribe {
+
+                @apply ml-4 rounded-full bg-yt-white text-yt-black font-medium text-sm px-4 py-2;
+            
+            }
+
+        }
+
+        .video-details-right {
+
+            @apply flex gap-2.5;
+
+            .cta {
+
+                @apply rounded-full bg-yt-light-black py-1.5 px-3 flex gap-1.5 items-center text-sm font-medium cursor-pointer;
+
+                .line {
+
+                    @apply bg-yt-light-white w-[1px] h-full mx-1;
+
+                }
+
+            }
+
+        }
+
+        .description {
+
+            @apply mt-3 rounded-xl p-3 bg-yt-light-black font-medium text-sm;
+
+            span {
+
+                @apply mx-0.5;
+
+            }
+
+        }
+
+    }
+
+    .right {
+
+        @apply w-1/4;
+
+    }
+
+}
